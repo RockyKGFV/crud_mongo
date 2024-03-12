@@ -9,11 +9,11 @@ db.createCollection("co_curricular_activities")
 
 db.academic_records.insertOne({
     student_id: 1,
-    name: "Shivam Behera",
+    name: "Vishwas S",
     grades: {
-      math: 92,
-      science: 88,
-      english: 95
+      math: 99,
+      science: 98,
+      english: 98
     },
     subjects: [
         "math",
@@ -25,12 +25,12 @@ db.academic_records.insertOne({
 
 db.co_curricular_activities.insertOne({
     student_id: 1,
-    name: "Shivam Behera",
+    name: "Vishwas S",
     activity_type: "Sports",
-    duration: "1 year",
+    duration: "2 years",
     achievements: [
-        "First place in chess tournament",
-        "Participation in science club"
+        "First position in chess tournament",
+        "Participation in astronomy club"
     ]
 })
 
@@ -39,11 +39,11 @@ db.co_curricular_activities.insertOne({
 db.academic_records.insertMany([
     {
     student_id: 2,
-    name: "Omkar",
+    name: "Ganesha",
     grades: {
-      math: 91,
-      science: 89,
-      english: 94
+      math: 96,
+      science: 98,
+      english: 95
         },
     subjects: [
             "math",
@@ -53,11 +53,11 @@ db.academic_records.insertMany([
     },
     {
     student_id: 3,
-    name: "Aditya",
+    name: "Shiva",
     grades: {
-      math: 91,
+      math: 90,
       science: 78,
-      english: 80
+      english: 90
         },
     subjects: [
             "math",
@@ -67,11 +67,11 @@ db.academic_records.insertMany([
     },
     {
         student_id: 4,
-        name: "Rohit",
+        name: "Rama",
         grades: {
-          math: 70,
-          science: 98,
-          english: 90
+          math: 95,
+          science: 93,
+          english: 92
         },
         subjects: [
             "math",
@@ -81,11 +81,11 @@ db.academic_records.insertMany([
     },
     {
             student_id: 5,
-            name: "Xtreme",
+            name: "Krishna",
             grades: {
-              math: 70,
-              science: 91,
-              english: 88
+              math: 75,
+              science: 95,
+              english: 87
         },
             subjects: [
             "math",
@@ -98,38 +98,38 @@ db.academic_records.insertMany([
   db.co_curricular_activities.insert([
     {
     student_id: 2,
-    name: "Omkar",
+    name: "Ganesha",
     activity_type: "Music",
-    duration: "2 years",
+    duration: "3 years",
     achievements: [
-            "Played violin in school orchestra"
+            "Played piano in school orchestra"
         ]
     },
     {
         student_id: 3,
-        name: "Aditya",
+        name: "Shiva",
         activity_type: "Cricket",
         duration: "4 years",
         achievements: [
-            "Played cricket in school ground"
+            "Played cricket in state level"
         ]
     },
     {
             student_id: 4,
-            name: "Rohit",
+            name: "Rama",
             activity_type: "Football",
             duration: "1 years",
             achievements: [
-            "Played footbnall in state level"
+            "Played footbnall in district level"
         ]
     },
     {
                 student_id: 5,
-                name: "Xtreme",
+                name: "Krishna",
                 activity_type: "Arts",
                 duration: "5 years",
                 achievements: [
-            "Got firts prize in arts"
+            "Got first prize in arts"
         ]
     },
 ])
@@ -148,7 +148,7 @@ db.co_curricular_activities.find({ student_id: 1
 
 db.academic_records.update({ student_id: 1
 },
-{ $set: { grades: { math: 95, science: 90, english: 94
+{ $set: { grades: { math: 100, science: 100, english: 100
         }
     }
 })
