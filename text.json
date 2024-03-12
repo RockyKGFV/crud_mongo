@@ -11,14 +11,14 @@ db.academic_records.insertOne({
     student_id: 1,
     name: "Vishwas S",
     grades: {
-      math: 99,
-      science: 98,
-      english: 98
+      science: 99,
+      mathematics: 98,
+      social: 98
     },
     subjects: [
-        "math",
         "science",
-        "english"
+        "mathematics",
+        "social"
     ]
 })
   
@@ -41,56 +41,56 @@ db.academic_records.insertMany([
     student_id: 2,
     name: "Ganesha",
     grades: {
-      math: 96,
-      science: 98,
-      english: 95
+      science: 96,
+      mathematics: 98,
+      social: 95
         },
     subjects: [
-            "math",
             "science",
-            "english"
+            "mathematics",
+            "social"
         ]
     },
     {
     student_id: 3,
     name: "Shiva",
     grades: {
-      math: 90,
-      science: 78,
-      english: 90
+      science: 90,
+      mathematics: 78,
+      social: 90
         },
     subjects: [
-            "math",
             "science",
-            "english"
+            "mathematics",
+            "social"
         ]
     },
     {
         student_id: 4,
         name: "Rama",
         grades: {
-          math: 95,
-          science: 93,
-          english: 92
+          science: 95,
+          mathematics: 93,
+          social: 92
         },
         subjects: [
-            "math",
             "science",
-            "english"
+            "mathematics",
+            "social"
         ]
     },
     {
             student_id: 5,
             name: "Krishna",
             grades: {
-              math: 75,
-              science: 95,
-              english: 87
+              science: 75,
+              mathematics: 95,
+              social: 87
         },
             subjects: [
-            "math",
             "science",
-            "english"
+            "mathematics",
+            "social"
         ]
     },
 ])
@@ -148,7 +148,7 @@ db.co_curricular_activities.find({ student_id: 1
 
 db.academic_records.update({ student_id: 1
 },
-{ $set: { grades: { math: 100, science: 100, english: 100
+{ $set: { grades: { science: 100, mathematics: 100, social: 100
         }
     }
 })
